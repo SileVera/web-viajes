@@ -1,0 +1,225 @@
+// Variables
+$primary-color: #007bff;
+$secondary-color: #f8f9fa;
+$text-color: #333;
+$font-family: 'Arial, sans-serif';
+$border-radius: 8px;
+$shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+// General Styles
+body {
+  font-family: $font-family;
+  color: $text-color;
+}
+
+.navbar {
+  a:hover {
+    color: $primary-color !important;
+  }
+}
+
+// Inicio Section
+.inicio {
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+
+  .video-inicio {
+    max-width: 50%;
+    margin: 10px auto;
+  }
+}
+
+// Card Styles
+.card {
+  border: none;
+  box-shadow: $shadow;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &-title {
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  &-text {
+    color: #555;
+  }
+
+  &-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: $border-radius $border-radius 0 0;
+  }
+
+  &-body {
+    padding: 1rem;
+  }
+}
+
+// Footer Styles
+footer {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+
+  p {
+    margin: 0;
+  }
+}
+
+// Responsive Media Queries
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+// Sección Destinos
+.destinos {
+  background-color: $secondary-color;
+}
+
+.galeria {
+  padding: 10px 0;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .gallery-img {
+    width: 100%;
+    height: 300px;
+    max-width: 350px;
+    border-radius: $border-radius;
+    object-fit: cover;
+    box-shadow: $shadow;
+    margin: 0 auto;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: black;
+  }
+
+  @media (max-width: 768px) {
+    .gallery-img {
+      max-width: 100%;
+    }
+  }
+}
+
+#itinerario {
+  background-color: #f9f9f9;
+  padding: 3rem 1rem;
+
+  h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background-color: #e74c3c;
+      margin: 1rem auto;
+    }
+  }
+
+  .day-schedule {
+    margin-bottom: 3rem;
+
+    h3 {
+      font-size: 1.8rem;
+      color: #34495e;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      .list-group-item {
+        border: none;
+        border-left: 5px solid #e74c3c;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        background: #ffffff;
+        box-shadow: $shadow;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: #f5f5f5;
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        strong {
+          color: #2980b9;
+          font-size: 1.1rem;
+        }
+
+        p {
+          margin: 0.5rem 0;
+          color: #555;
+        }
+      }
+    }
+  }
+
+  .map-container {
+    margin-top: 2rem;
+
+    iframe {
+      border-radius: 5px;
+      box-shadow: $shadow;
+    }
+  }
+}
+.galeria {
+  padding: 20px 0;  /* Padding para darle espacio */
+  text-align: center;
+
+  h2 {
+      margin-bottom: 30px;
+      font-size: 2rem;
+      font-weight: bold;
+  }
+
+  /* Estilo de las imágenes del carousel */
+  .gallery-img {
+      width: 100%;  /* Las imágenes ocupan todo el ancho disponible del contenedor */
+      height: auto; /* Mantener la proporción de la imagen */
+      max-width: 400px; /* Cambié el tamaño máximo de las imágenes */
+      border-radius: 8px; /* Bordes redondeados */
+      object-fit: cover; /* Asegura que la imagen cubra su contenedor */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para las imágenes */
+      margin: 0 auto; /* Centrado de las imágenes dentro del contenedor */
+  }
+
+  /* Flechas de navegación */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+      background-color: black; /* Cambiar el color de fondo de las flechas a negro */
+  }
+
+  /* Media Query para pantallas más pequeñas */
+  @media (max-width: 768px) {
+      .gallery-img {
+          max-width: 90%; /* Las imágenes ocupan el 90% del ancho disponible en pantallas más pequeñas */
+      }
+  }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tailandia</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    l
+    <!-- Iconos y Fuentes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-light shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Viajando con Vera</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#destinos">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="inicio">
+        <h1>Explora Tailandia en 15 Días</h1>
+        <p>Un recorrido mágico por Bangkok, Chiang Mai, Phuket, Krabi y Phi Phi.</p>
+    </header>
+
+    <!-- Galería -->
+    <section id="galeria" class="galeria container mt-5">
+        <h2 class="text-center mb-4">Descubre Tailandia</h2>
+        <div id="carouselBarcelona" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Imagen 1 -->
+                <div class="carousel-item active">
+                    <img src="imagenes/bangkok1.png" class="d-block mx-auto gallery-img" alt="Bangkok">
+                </div>
+                <!-- Imagen 2 -->
+                <div class="carousel-item">
+                    <img src="imagenes/chiangmai.png" class="d-block mx-auto gallery-img" alt="Chiang Mai">
+                </div>
+                <!-- Imagen 3 -->
+                <div class="carousel-item">
+                    <img src="imagenes/mayabay.png" class="d-block mx-auto gallery-img" alt="Maya Bay">
+                </div>
+            <!-- Botones de navegación -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBarcelona" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBarcelona" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+     <!-- Itinerario -->
+     <section id="itinerario" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Itinerario Resumido</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Días 1-3: Bangkok</strong><br>Explora el Gran Palacio y Wat Arun. Disfruta de la comida callejera y los mercados flotantes.</li>
+                <li class="list-group-item"><strong>Días 4-6: Chiang Mai</strong><br>Recorre el Templo Doi Suthep y toma un curso de cocina tailandesa.</li>
+                <li class="list-group-item"><strong>Días 7-9: Phuket</strong><br>Relájate en las playas de Patong y disfruta de deportes acuáticos.</li>
+                <li class="list-group-item"><strong>Días 10-12: Krabi</strong><br>Admira las impresionantes formaciones rocosas de Railay Beach.</li>
+                <li class="list-group-item"><strong>Días 13-15: Islas Phi Phi</strong><br>Practica snorkel en aguas cristalinas y explora Maya Bay.</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Restaurantes Michelin -->
+    <section id="restaurantes" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Restaurantes Michelin Económicos</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="imagenes/jayfai.jpg" class="card-img-top" alt="Jay Fai">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://guide.michelin.com/en/bangkok-region/bangkok/restaurant/jay-fai">Jay Fai</a></h5>
+                            <p class="card-text">Disfruta de su famoso cangrejo al curry en Bangkok.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="imagenes/thipsamai.jpg" class="card-img-top" alt="Thipsamai">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://thipsamai.com/">Thipsamai</a></h5>
+                            <p class="card-text">Considerado uno de los mejores pad thai del mundo.</p>
+                        </div>
+                    </div>
+                </div>      
+                 <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <img src="imagenes/khaoSoi.JPG" class="card-img-top" alt="Pizza 3">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://guide.michelin.com/es/es/chiang-mai-region/chiang-mai/restaurante/khao-soi-mae-sai">Khao Soi</a></h5>
+                                    <p class="card-text">Destaca por su delicioso Khao Soi con opciones innovadoras</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <img src="imagenes/kruaPhech.JPG" class="card-img-top" alt="Pizza 4">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://guide.michelin.com/es/es/chiang-mai-region/chiang-mai/restaurante/krua-phech-doi-ngam-krua-mueang-classic">Krua Phech Doi Ngam</a></h5>
+                                    <p class="card-text">Se diferencia por ofrecer la mejor autentica comida tailandesa del norte en un ambiente tradicional.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+    <!-- Footer -->
+    <footer class="text-center p-3 bg-dark text-white">
+        <p>&copy; 2024 Viajando con Vera | Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

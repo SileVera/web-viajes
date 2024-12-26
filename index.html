@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajando con Vera</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Compilado de SASS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos y Fuentes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-light shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Viajando con Vera</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinos">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Sección Inicio -->
+    <section id="inicio" class="inicio text-center p-5">
+        <h1>¡Bienvenidos a Viajando con Vera!</h1>
+        <p>Explora los destinos más hermosos del mundo con nosotros.</p>
+        <video controls class="video-inicio">
+            <source src="videos/viajandoConVera.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+    </section>
+
+    <!-- Sección Destinos -->
+    <section id="destinos" class="destinos p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Destinos Destacados</h2>
+            <div class="row g-4">
+                <!-- Francia -->
+                <div class="col-md-3">
+                    <div class="card">
+                        
+                        <img src="imagenes/torreEiffel.JPG" class="card-img-top" alt="Francia">
+                        <div class="card-body">
+                            <h5 class="card-title"> <a href="francia.html">París</a></h5>
+                            <p class="card-text" >Descubre la Torre Eiffel y los Campos Elíseos.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Italia -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="imagenes/Coliseo-romano.JPG" class="card-img-top" alt="Italia">
+                        <div class="card-body">
+                            <h5 class="card-title"> <a href="Roma.html">Roma</a></h5>
+                            <p class="card-text">Explora Roma, Venecia y la Toscana.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- España -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="imagenes/barcelonaCiudad.JPG" class="card-img-top" alt="Barcelona">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="barcelona.html">Barcelona</a></h5>
+                            <p class="card-text">Descubre la magia de Barcelona: arte, historia y mediterráneo en cada rincón</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tailandia -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="imagenes/tailandia.jpg" class="card-img-top" alt="Tailandia">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="tailandia.html">Tailandia</a></h5>
+                            <p class="card-text">Playas paradisíacas y templos budistas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="blog p-5">
+        <h2 class="text-center mb-4">Blog</h2>
+        <p class="text-center">Próximamente...</p>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center p-3 bg-dark text-white">
+        <p>&copy; 2024 Viajando con Vera | Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Barcelona - España</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    l
+    <!-- Iconos y Fuentes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-light shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Viajando con Vera</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#destinos">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Encabezado -->
+    <header class="inicio">
+        <h1>Bienvenidos a Barcelona</h1>
+        <p>Descubre la vibrante capital de Cataluña, donde la historia, el arte y la vida nocturna se unen en una experiencia inolvidable. Desde las maravillas de Gaudí hasta sus playas soleadas, Barcelona tiene algo especial para todos.</p>
+    </header>
+
+    <!-- Galería -->
+    <section id="galeria" class="galeria container mt-5">
+        <h2 class="text-center mb-4">Descubre Barcelona</h2>
+        <div id="carouselBarcelona" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Imagen 1 -->
+                <div class="carousel-item active">
+                    <img src="imagenes/barcelona1.png" class="d-block mx-auto gallery-img" alt="Barcelona 1">
+                </div>
+                <!-- Imagen 2 -->
+                <div class="carousel-item">
+                    <img src="imagenes/barcelona2.png" class="d-block mx-auto gallery-img" alt="Barcelona 2">
+                </div>
+                <!-- Imagen 3 -->
+                <div class="carousel-item">
+                    <img src="imagenes/barcelona3.png" class="d-block mx-auto gallery-img" alt="Barcelona 3">
+                </div>
+            </div>
+            <!-- Botones de navegación -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBarcelona" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBarcelona" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Itinerario -->
+    <section id="itinerario" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Qué hacer en Barcelona en 2 días</h2>
+            <!-- Día 1 -->
+            <div class="day-schedule mb-5">
+                <h3 class="text-center text-primary">Día 1: Explorando la ciudad</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <strong>9:00 AM:</strong> Visita a la Sagrada Familia
+                        <p>Adéntrate en el asombroso diseño de Gaudí y maravíllate con esta icónica basílica.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>12:00 PM:</strong> Almuerzo en el Barrio Gótico
+                        <p>Prueba tapas auténticas en uno de los pintorescos restaurantes del barrio.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>3:00 PM:</strong> Paseo por el Parque Güell
+                        <p>Explora las obras maestras de Gaudí y disfruta de vistas panorámicas de la ciudad.</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Día 2 -->
+            <div class="day-schedule">
+                <h3 class="text-center text-primary">Día 2: Playas y cultura</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <strong>9:00 AM:</strong> Relájate en la Playa de la Barceloneta
+                        <p>Disfruta del sol, la arena y el mar en una de las playas más populares.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>1:00 PM:</strong> Almuerzo en un chiringuito
+                        <p>Saborea mariscos frescos en un restaurante frente al mar.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="clubs" class="p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Los Mejores Clubs Nocturnos de Barcelona</h2>
+            <div class="row g-4">
+                <!-- Club 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="imagenes/club1.jpg" class="card-img-top" alt="Club 1">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://www.opiumbarcelona.com/" target="_blank">Opium Barcelona</a>
+                            </h5>
+                            <p class="card-text">Un lugar icónico frente al mar con una atmósfera elegante y DJs de renombre.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Club 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="imagenes/club2.jpg" class="card-img-top" alt="Club 2">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://www.pachabarcelona.es/" target="_blank">Pacha Barcelona</a>
+                            </h5>
+                            <p class="card-text">Famoso por su ambiente vibrante y música de primer nivel.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Club 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="imagenes/club3.jpg" class="card-img-top" alt="Club 3">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://shoko.biz/" target="_blank">Shôko Barcelona</a>
+                            </h5>
+                            <p class="card-text">Una fusión de restaurante y discoteca con un estilo único y fiestas temáticas.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Club 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="imagenes/club4.jpg" class="card-img-top" alt="Club 4">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://www.bngrup.es/clubs/catwalk" target="_blank">Catwalk Club</a>
+                            </h5>
+                            <p class="card-text">Un club con múltiples ambientes que ofrece desde música electrónica hasta reguetón.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="text-center p-3 bg-dark text-white">
+        <p>&copy; 2024 Viajando con Vera | Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
